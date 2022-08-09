@@ -23,4 +23,9 @@ export class AppComponent {
       console.log(`Dialog result: ${result}`);
     })
   }
+
+  /* button pull request */
+  showInConsole(){
+    console.log('Button clicked');
+  }
 }
