@@ -2,7 +2,10 @@
 <main class="container">
 
   <h2>Slider</h2>
-  <app-slider></app-slider>
+  <app-slider [value]="valueSlider" 
+      (valueChange)="valueSlider=$event">
+  </app-slider>
+  <span>{{ valueSlider | currency }}</span>
 
 
   <h2>Autocomplete</h2>
@@ -14,9 +17,14 @@
     Open dialog
   </button>
 
+  
   <h2>Prueba de Pull Request</h2>
   <button mat-raised-button color="warn" (click)="showInConsole()">
     Click me!
   </button>
+
   
+  <h2>Using Renderer2 to access DOM</h2>
+  <app-dom-renderer2></app-dom-renderer2>
+
 </main>

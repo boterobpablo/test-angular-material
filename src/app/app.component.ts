@@ -11,6 +11,8 @@ export class AppComponent {
   
   title = 'test-angular-material';
 
+  valueSlider = 50;
+
   constructor(public dialog: MatDialog) {}
 
   /* dialog */
