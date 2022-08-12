@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 
 /* modulo donde estoy importando todos los componentes de angular material */
 import { AngularMaterialModule } from './angular-material/angular-material.module';
+import { DomRenderer2Component } from './dom-renderer2/dom-renderer2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DomRenderer2Component,
   ],
   imports: [
     BrowserModule,
