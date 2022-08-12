@@ -17,7 +17,6 @@ export class DomRenderer2Component implements OnInit {
     const txtNode = this.renderer2.createText('A new text node');
     this.renderer2.appendChild(pNode, txtNode);
     this.renderer2.appendChild(this.elementRef.nativeElement, pNode);
-    console.log(this.elementRef.nativeElement);
   }
 
 }
