@@ -8,9 +8,8 @@ describe('PrimeSliderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PrimeSliderComponent ]
-    })
-    .compileComponents();
+      declarations: [PrimeSliderComponent]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PrimeSliderComponent);
     component = fixture.componentInstance;

@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatSliderChange } from '@angular/material/slider';
 
 @Component({
@@ -6,19 +6,13 @@ import { MatSliderChange } from '@angular/material/slider';
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css']
 })
-export class SliderComponent implements OnInit {
-
+export class SliderComponent {
   @Input() value!: number;
   @Output() valueChange = new EventEmitter<number>();
 
-  constructor() { }
+  constructor() {}
 
-  
-  ngOnInit(): void {
-  }
-
-  valueChangeEvent(event: MatSliderChange) {
+  valueChangeEvent(event: MatSliderChange): void {
     this.valueChange.emit(event.value as number);
   }
-
 }

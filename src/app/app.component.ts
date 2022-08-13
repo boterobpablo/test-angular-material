@@ -8,7 +8,6 @@ import { DialogComponent } from './angular-material/dialog/dialog.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
   title = 'test-angular-material';
 
   valueSlider = 50;
@@ -16,18 +15,18 @@ export class AppComponent {
   constructor(public dialog: MatDialog) {}
 
   /* dialog */
-  openDialog(){
+  openDialog() {
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: { name: 'Juan Pablo Botero' },
+      data: { name: 'Juan Pablo Botero' }
     });
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
-    })
+    });
   }
 
   /* button pull request */
-  showInConsole(){
+  showInConsole() {
     console.log('Button clicked');
   }
 }

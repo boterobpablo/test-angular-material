@@ -11,18 +11,15 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DomRenderer2Component,
-  ],
+  declarations: [AppComponent, DomRenderer2Component],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    PrimeNgModule,
+    PrimeNgModule
   ],
   exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
