@@ -7,4 +7,8 @@
 
 # formatea y pasa el linter por todos los archivos y agrega los archivos 
 # modificados al stage
-npm run format && ng lint --fix && git add .
+# npm run format && ng lint --fix && git add .
+
+# formatear y pasar el linter solo por los archivos modificados
+# no es necesario agregar el comando add porq pretty-quick ya lo hace
+npx pretty-quick --pattern "src/**/*.*(ts|json|html|scss)" --staged  && ng lint --fix
