@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# comandos que se van a ejecutar en la terminal antes de que se haga el commit
+# ejemplo:
+# npm test
+
+# formatea y pasa el linter por todos los archivos y agrega los archivos 
+# modificados al stage
+# npm run format && ng lint --fix && git add .
