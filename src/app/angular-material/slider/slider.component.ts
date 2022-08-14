@@ -10,8 +10,6 @@ export class SliderComponent {
   @Input() value!: number;
   @Output() valueChange = new EventEmitter<number>();
 
-  constructor() {}
-
   valueChangeEvent(event: MatSliderChange): void {
     this.valueChange.emit(event.value as number);
   }

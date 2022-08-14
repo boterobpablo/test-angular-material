@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class PrimeSliderComponent {
   val: number = 50;
-
-  constructor() {}
 }

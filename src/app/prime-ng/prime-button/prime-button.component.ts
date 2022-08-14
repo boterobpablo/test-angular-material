@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./prime-button.component.css']
 })
 export class PrimeButtonComponent {
-  constructor() {}
-
-  clickHandle() {
+  clickHandle(): void {
     console.log('PrimeNg button clicked');
   }
 }

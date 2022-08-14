@@ -15,7 +15,7 @@ export class AppComponent {
   constructor(public dialog: MatDialog) {}
 
   /* dialog */
-  openDialog() {
+  openDialog(): void {
     const dialogRef = this.dialog.open(DialogComponent, {
       data: { name: 'Juan Pablo Botero' }
     });
@@ -26,7 +26,7 @@ export class AppComponent {
   }
 
   /* button pull request */
-  showInConsole() {
+  showInConsole(): void {
     console.log('Button clicked');
   }
 }
