@@ -7,4 +7,4 @@
 
 # formatea y pasa el linter por todos los archivos y agrega los archivos 
 # modificados al stage
-# npm run format && ng lint --fix && git add .
+npm run format && ng lint --fix && git add .
