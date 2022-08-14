@@ -11,4 +11,4 @@
 
 # formatear y pasar el linter solo por los archivos modificados
 # no es necesario agregar el comando add porq pretty-quick ya lo hace
-git add . && npx pretty-quick --pattern "src/**/*.*(ts|json|html|scss)" --staged  && ng lint --fix
+npx pretty-quick --pattern "src/**/*.*(ts|json|html|scss)" --staged  && ng lint --fix
