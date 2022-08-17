@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogComponent } from './dialog.component';
+import { PrimeSliderComponent } from './prime-slider.component';
 
-describe('DialogComponent', () => {
-  let component: DialogComponent;
-  let fixture: ComponentFixture<DialogComponent>;
+describe('PrimeSliderComponent', () => {
+  let component: PrimeSliderComponent;
+  let fixture: ComponentFixture<PrimeSliderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DialogComponent]
+      declarations: [PrimeSliderComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(DialogComponent);
+    fixture = TestBed.createComponent(PrimeSliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

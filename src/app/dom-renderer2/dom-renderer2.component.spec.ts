@@ -8,9 +8,8 @@ describe('DomRenderer2Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DomRenderer2Component ]
-    })
-    .compileComponents();
+      declarations: [DomRenderer2Component]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(DomRenderer2Component);
     component = fixture.componentInstance;

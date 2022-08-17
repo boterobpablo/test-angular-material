@@ -1,37 +1,35 @@
-
 <main class="container">
-
-  <h2>Slider</h2>
-  <app-slider [value]="valueSlider" 
-      (valueChange)="valueSlider=$event">
+  <h2>Material Slider</h2>
+  <app-slider [value]="valueSlider" (valueChange)="valueSlider = $event">
   </app-slider>
   <span>{{ valueSlider | currency }}</span>
 
-
-  <h2>Autocomplete</h2>
+  <h2>Material Autocomplete</h2>
   <app-autocomplete></app-autocomplete>
 
-
-  <h2>Dialog</h2>
+  <h2>Material Dialog</h2>
   <button mat-raised-button color="primary" (click)="openDialog()">
     Open dialog
   </button>
 
-  
+  <h2>PrimeNg Button</h2>
+  <app-prime-button></app-prime-button>
+
+  <h2>PrimeNg Slider</h2>
+  <app-prime-slider></app-prime-slider>
+
   <h2>Prueba de Pull Request en GitHub</h2>
   <button mat-raised-button color="warn" (click)="showInConsole()">
-    Click me!
+    Click here!
   </button>
 
   <h2>Prueba de Pull Request en GitLab</h2>
   <button mat-raised-button color="accent" (click)="showInConsole()">
-    Click me!
+    Click here!
   </button>
 
-  
   <h2>Using Renderer2 to access DOM</h2>
   <app-dom-renderer2></app-dom-renderer2>
 
-
-
+  <h2>mira mira</h2>
 </main>

@@ -6,11 +6,7 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./dom-renderer2.component.css']
 })
 export class DomRenderer2Component implements OnInit {
-
-  constructor(
-    private renderer2: Renderer2,
-    private elementRef: ElementRef
-  ) { }
+  constructor(private renderer2: Renderer2, private elementRef: ElementRef) {}
 
   ngOnInit(): void {
     const pNode = this.renderer2.createElement('p');
@@ -18,5 +14,4 @@ export class DomRenderer2Component implements OnInit {
     this.renderer2.appendChild(pNode, txtNode);
     this.renderer2.appendChild(this.elementRef.nativeElement, pNode);
   }
-
 }

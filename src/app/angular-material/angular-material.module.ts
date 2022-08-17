@@ -15,13 +15,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSliderModule } from '@angular/material/slider';
 
-
 @NgModule({
-  declarations: [
-    AutocompleteComponent,
-    DialogComponent,
-    SliderComponent,
-  ],
+  declarations: [AutocompleteComponent, DialogComponent, SliderComponent],
 
   /* modulos */
   imports: [
@@ -33,7 +28,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatFormFieldModule,
     MatInputModule,
     MatOptionModule,
-    MatSliderModule,
+    MatSliderModule
   ],
 
   /* exporto lo que quiero usar fuera de este modulo */
@@ -47,7 +42,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatSliderModule,
     AutocompleteComponent,
     DialogComponent,
-    SliderComponent,
+    SliderComponent
   ]
 })
-export class AngularMaterialModule { }
+export class AngularMaterialModule {}
