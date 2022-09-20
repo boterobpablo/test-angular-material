@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ConfirmationService } from 'primeng/api';
 import { DialogComponent } from './angular-material/dialog/dialog.component';
 
 @Component({
@@ -12,7 +13,10 @@ export class AppComponent {
 
   valueSlider = 50;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    private confirmationService: ConfirmationService
+  ) {}
 
   /* dialog */
   openDialog(): void {
@@ -28,5 +32,13 @@ export class AppComponent {
   /* button pull request */
   showInConsole(): void {
     console.log('Button clicked');
+  }
+
+  confirm(): void {
+    this.confirmationService.confirm({
+      message: `Archivo Siiuuu ya cargado`,
+      acceptLabel: 'Ok',
+      rejectVisible: false
+    });
   }
 }
